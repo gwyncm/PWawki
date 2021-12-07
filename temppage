@@ -1,0 +1,68 @@
+[[http://www.gwynux.ca/image/gwynux_banner.png GwynuxBanner]]
+
+<META NAME="GENERATOR" CONTENT="Wawki 1.0">
+<meta name="keywords" content="ottawa, canada, web design,system admin,
+training,computer hardware, linux, database, objects, gwynux ">
+<meta name="description" content="Toadware Technologies Inc. is a technology
+company specializing in consulting, training, computer hardware, computer
+software, linux, database, video, and internet.">
+<meta name="author" content="Gwyneth Morrison">
+
+
++++  Welcome to the Gwynux/ Toadware Linux project
+
+++ Gwynux General Information
+
+----
+
+{{ 
+
+
+[http://www.gwynux.ca/index.html Gwynux Home] 
+
+[http://www.gwynux.ca/appl.html Applications] 
+
+[http://www.gwynux.ca/install.html Installation] 
+
+[http://www.gwynux.ca/pkglist.html Package List] 
+
+[http://www.gwynux.ca/download.html Download]
+
+[http://www.gwynux.ca/wawki Wawki]
+
+[http://www.toadware.ca Toadware Home]
+
+|| 
+
+++ What is Gwynux ? %
+
+**Gwynux** is a **BIG** distribution of Linux developed by %
+Toadware Technologies of Ottawa Ontario. %
+
+The aim of the  __Gwynux__  project is to provide a %
+traceable and //easily// updatable distribution of Linux %
+with a number of features for system /*rescue*/ , secure %
+@@server, and CD operation.@@
+
+--The Gwynux--  is intended for advanced users. }}
+
+[[code]] This is code [[/code]]
+
+ * This is a list
+
+ # This is another
+
+ <<=username:Gwyneth=>>
+ <</cgi-bin/pwawki/wawki.cgi
+ **Username:** <<:username:30:>>
+ <<$login$>>
+ >> 
+
+ **Go Here** [[[HomePage]]]
+
+ [[http://gwynux.ca/image/gwynux_banner.jpg GwynuxBanner]] %
+
+ 
+
+
+

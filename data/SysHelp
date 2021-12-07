@@ -1,0 +1,54 @@
+&&GwynuxHeader
+
+++ Wawki system page formatting help
+
+Paragraphs are separated by a blank line.
+
+@@ Preformatted text starts and ends with @!@ @@
+
++ H1 heading ++ H2 heading +++ H3 Heading ++++ H4 Heading
+
+@@ + H1 heading ++ H2 heading +++ H3 Heading ++++ H4 Heading @@
+
+---- 
+
+@@ Horizontal Rule - 4 or more dashes @@
+
+Wiki links are enclosed in [[[SysHelp]]]
+
+@@ Wiki links are enclosed in [[[SysHelp]]] @@
+
+Regular links are created with http://www.gwynux.ca
+
+@@ Regular links are created with http://www.gwynux.ca @@
+
+Named links are created with [http://www.gwynux.ca Linkname]
+
+@@ Named links are created with [http://www.gwynux.ca Linkname] @@
+
+Images are created with [[http://www.gwynux.ca/image/smiley.gif]]
+
+@@ Images are created with [[http://www.gwynux.ca/image/smiley.gif]] @@
+
+! is deleted and can be used an an escape like !+++ Heading 
+
+@@ ! is deleted and can be used an an escape like !+++ Heading @@
+
+
+* starts an unorderd list
+
+@@ * starts an unorderd list @@
+
+# starts an orderd list
+
+@@ # starts an orderd list @@
+
+--Strike-- __Underline__ **bold** //italics// /*both*/ 
+
+@@ --Strike-- __Underline__ **bold** //italics// /*both*/ @@
+
+{{{ Tom || Dick || Harry }} 
+
+@@ {{{ Tom || Dick || Harry }} {!{ Table |!| Data :!: Row !{!{  No border !{!{!{ Border  @@
+
+

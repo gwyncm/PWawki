@@ -1,0 +1,70 @@
+#! /bin/bash
+#
+# Wawki control script version 1.0 Copyright Gwyneth Morrison
+#
+#
+# Choose Wawki page
+#
+if [ $# -gt 0 ] 
+then
+	PAGE=$1
+else
+	PAGE=HomePage
+fi
+#
+# Start editing 
+#
+if echo $PAGE | grep '^@' > LASTCMD
+then
+	PAGE=`echo $PAGE | cut -c2-`	
+	CMD=DoEdit
+fi
+#
+# Return from editing
+#
+if echo $PAGE | grep '^!' > LASTCMD
+then
+	PAGE=`echo $PAGE | cut -c2-`	
+	cat | 
+	sed 's/textin=//g' |
+	sed 's/%0D//g' |
+	#sed 's/%0A/\n/g' |
+	sed 's/+/ /g' | 
+	awk -f awktran.awk > data/$PAGE 
+	#awk -f awktran.awk > tempedit
+fi
+#
+# Display existing pages only
+#
+if [ ! -r "data/$PAGE" ] 
+then
+	PAGE=HomePage
+fi
+#
+# Allow editing writable pages
+#
+if [ -w data/$PAGE ]
+then
+	EDIT=1
+else
+	EDIT=0
+fi
+#
+# Get page date
+#
+# Mac Hack
+DATE='000000'
+DATE=`ls -l -T data/$PAGE | awk '{ print $7 $6 $9 } '`
+#
+# Process page
+#
+if [ "DoEdit" == "$CMD" ]
+then
+	cat data/$PAGE |
+	awk -f awkedit.awk -v PAGE=$PAGE -v DATE=$DATE 
+	
+else
+	awk -f awkpre.awk < data/$PAGE > temppage 
+	#awk -f wawki.awk -v PAGE=$PAGE -v EDIT=$EDIT -v DATE=$DATE -v CGI=$CGI
+	./pwawki.py temppage $PAGE $DATE
+fi 

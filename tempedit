@@ -1,0 +1,39 @@
+&GwynuxHeader
+
+===  Welcome to the Gwynux/ Toadware Linux project
+
+== Gwynux General Information
+
+----
+
+{ | 
+
+
+&GwynuxMenu
+
+| 
+
+== What is Gwynux ? %
+
+*Gwynux* is a distribuion of Linux developed by %
+Toadware Technologies of Ottawa Ontario. %
+
+The aim of the  _Gwynux_  project is to provide a %
+traceable and //easily// updatable distribution of Linux %
+with a number of features for system /*rescue*/ , secure %
+server, and CD operation.
+
+-Gwynux-  is intended for advanced users. }
+
+ * This is a list
+ * This is more
+
+ 0 This is another
+ 0 This is more
+
+ *Go+Here* GoHere
+
+ http://gwynux.ca/image/gwynux_banner.jpg %
+
+ 
+
